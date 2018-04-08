@@ -43,7 +43,6 @@ header {
 }
 
 .body_content {
-    border: solid 1px black;
     height:1400px;
     position: relative;
     top: 85px;
@@ -58,7 +57,6 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 14px;
-    border: solid 1px black;
 }
 strong{
     font-size: 20px;
@@ -83,15 +81,18 @@ strong{
 .col_3 {
     display:flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     width:242px;
     margin-right; 30px;
     margin-top: 30px;
 }
 
-.mother{
+.mother span{
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    text-align: center;
     background-image: url(../Images/img-story-main.png);
     background-repeat: no-repeat;
     font-family: Georgia;
@@ -111,6 +112,8 @@ strong{
     font-size: 30px;
     color: white;
     height: 300px;
+    width: 300px;
+    padding: 8px;
 }
 
 .camera{
@@ -123,11 +126,15 @@ strong{
     font-size: 30px;
     color: white;
     height: 300px;
+    width: 300px;
+    padding: 8px;
 }
 
-.cats{
+.cats span{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-image: url(../Images/Cat_CEO.png);
     background-repeat: no-repeat;
     font-family: Georgia;
@@ -135,4 +142,44 @@ strong{
     font-size: 30px;
     color: white;
     height: 300px;
+}
+
+.story_1{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.images{
+    display:flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+p{
+    padding: 8px;
+}
+
+.earth span {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.camera span {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.col_3 p{
+    border-bottom: solid 1px black;
+    background-color: whitesmoke;
+    font-size: 12px;
+    color: dimgray;
+}
+
+#bites{
+    font-size: 16px;
+    font-weight: bold;
 }
